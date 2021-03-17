@@ -32,8 +32,8 @@
 #define BREW_READY_DETECTION        0.3 // 0=off | 0.x=If measured temperature of the last 60 seconds has been within this defined margin around the SET_POINT, we are able to brew. (recommended value 0.3)
 #define ENABLE_HARDWARE_LED         0   // 0=off | 1=Single LED | 2=WS2812b - LEDs at GPO pinLed will lighten when BREW_READY_DETECTION triggers or temperature>SETPOINT_STEAM
 #define ENABLE_HARDWARE_LED_NUMBER  0   // 0=off | (ENABLE_HARDWARE_LED=2) Number of WS2812b-based LEDs connected
-#define ENABLE_HARDWARE_LED_RGB_ON  "200, 255, 100"  // (ENABLE_HARDWARE_LED=2) RGB values when leds should be turned on.
-#define ENABLE_HARDWARE_LED_RGB_OFF "255, 166, 166"  // (ENABLE_HARDWARE_LED=2) RGB values when leds should be turned off.
+#define ENABLE_HARDWARE_LED_RGB_ON LightGreen  // (ENABLE_HARDWARE_LED=2) Color name when leds should be turned on. List of Colours: https://github.com/FastLED/FastLED/wiki/Pixel-reference
+#define ENABLE_HARDWARE_LED_RGB_OFF LightPink  // (ENABLE_HARDWARE_LED=2) Color name when leds should be turned off.
 
 //#define DEBUGMODE               // to enable Debug uncomment this line. Afterwards you can connect via telnet to pot 23 to see debug logs.
 
